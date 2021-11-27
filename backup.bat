@@ -1,4 +1,5 @@
 "c:\Server\bin\mysql\bin\mysqldump.exe"  --defaults-extra-file="c:\Server\data\htdocs\www\config.cnf" your_db_name > "c:\Server\data\htdocs\www\your_db_name.sql"
+"c:\Server\bin\mysql\bin\mysqldump.exe"  --defaults-extra-file="c:\Server\data\htdocs\www\config.cnf" --no-data your_db_name > "c:\Server\data\htdocs\www\your_db_structure_name.sql"
 
 set BackupName="server.zip"
 set BackupPath="c:\Backups\Server\"
