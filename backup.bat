@@ -43,4 +43,4 @@ SET Final=%Final:"=%
 
 for /f %%i in ("%Final%") do set CurrentVolume=%%~zi
 
-curl "https://api.telegram.org/bot[BOT:TOKEN]/sendMessage?chat_id=-[Chat ID]&parse_mode=html&text=<b>\[LeonidKoshcheev\]</b> Backup %Final% is done. File size: <b>%CurrentVolume%b</b>"
+curl "https://api.telegram.org/bot[BOT:TOKEN]/sendMessage?chat_id=-[Chat ID]&parse_mode=html&text=<b>\[LeonidKoshcheev\]</b>+Backup+%Final%+is+done.+File+size:+<b>%CurrentVolume%b</b>"
